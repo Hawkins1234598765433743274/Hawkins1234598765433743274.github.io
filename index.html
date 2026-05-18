@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Clicker Game</title>
+
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+
+        button {
+            font-size: 30px;
+            padding: 20px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <h1>Cookie Clicker Mini Game</h1>
+
+
+    <h2>Score: <span id="score">0</span></h2>
+
+
+    <button onclick="addPoint()">🍪 Click Me</button>
+
+
+    <script>
+        let score = 0;
+
+
+        function addPoint() {
+            score++;
+            document.getElementById("score").innerText = score;
+        }
+    </script>
+
+
+</body>
+</html>
